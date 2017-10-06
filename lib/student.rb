@@ -41,8 +41,11 @@ class Student
 
   end
 
-  # def self.create(hash)
-  #   new_student = hash.map do |attribute|
-  #     self.send
-  # end
+  def self.create(name:, grade:)
+    Student.new(name, grade).save
+  end  
+
+
+
+  
 end  # End of Class
